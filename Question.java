@@ -117,9 +117,15 @@ public class Question {
         
         int totalQuestions = 11;
         System.out.println(points);
-
-        int questionsCorrect = points / 10;
-        System.out.println("Your total score was " + (questionsCorrect/totalQuestions) * 100);
+        int questionsCorrect = (points / 10);
+        System.out.println("Your total score was " + questionsCorrect + "/" + totalQuestions + "!");
+        
+        if (questionsCorrect < 9) {
+            System.out.println("You suck");
+        } else {
+            System.out.println("You win!!!");
+        }
+        
         
     }
 
